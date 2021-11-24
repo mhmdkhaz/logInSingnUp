@@ -1,0 +1,199 @@
+body{
+    background-image: linear-gradient(to right ,  #3c5c59 , #198d82);
+}
+
+.all{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+}
+
+ .login , .sign{
+    width: 100%;
+    background-color: #335e59;
+    border: 1px solid #fff;
+    margin: 50px auto ;
+    border-radius: 10px;
+    border-top-left-radius: 4%;
+    overflow: hidden;
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .all {
+    width: 90%;
+    position: absolute;
+    left: 6%;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .all {
+    width: 90%;
+    position: absolute;
+    left: 6%;
+    }
+  }
+
+  .login h1 , .sign h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.login form div , .sign form div{
+    margin: 30px 0 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .login form div , .sign form div{
+        margin-left: 5px;
+    }
+  }
+
+.login div input , .sign div input{
+    width: 92%;
+    border: none;
+    border-radius: 2px;
+    height: 32px;
+    margin-bottom: 30px;
+    outline: none;
+    font-size: cursive;
+    font-size: 25px;
+    color: #000;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .login div input , .sign div input{
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+        height: 15px;
+        margin-bottom: 30px;
+        outline: none;
+        font-size: cursive;
+        font-size: 25px;
+        color: #000;
+        padding: 10px;
+    }
+}
+
+.login div input::placeholder , .sign div input::placeholder{
+    font-family: cursive;
+}
+
+.login .name p , .password p , .sign .name p , .password p{
+    margin-top: 5px;
+    font-family: cursive;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.login .href , .sign .href{
+    display: flex;
+    justify-content: center;
+}
+
+.login a , .sign a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-family: cursive;
+    border: none;
+    background-color: #fff;
+    color: #198d82;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* login  */
+.login{
+    display: none;
+}
+
+/* sign up */
+.sign{
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 10%;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    animation: hide .5s linear ;
+}
+@keyframes hide{
+    0%{
+       width: 100%;
+       height: 100%;
+        border-bottom-right-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        opacity: 1;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+        border-bottom-right-radius: 80%;
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+        opacity: .8;
+    }
+    75%{
+        width: 25%;
+        height: 25%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        opacity: .5;
+    }
+    100%{
+        width: 10%;
+        height: 10%;
+        border-bottom-right-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        opacity: 0;
+    }
+}
+
+/* start in login */
+
+.show {
+    animation: showw .7s linear ;
+}
+@keyframes showw{
+    0%{
+       width: 10%;
+       opacity: 0;
+    }
+    50%{
+        width: 25%;
+        opacity: .2;
+    }
+    75%{
+        width: 50%;
+        opacity: .5;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
